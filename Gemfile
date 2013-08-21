@@ -23,6 +23,11 @@ gem 'haml-rails', '0.3.4'
 gem 'newrelic_rpm'
 gem 'jquery-rails'
 
+group :production do
+  gem 'thin'
+  gem 'pg'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
